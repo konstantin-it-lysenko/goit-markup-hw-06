@@ -23,39 +23,37 @@
 
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__wrapper">
-          <nav class="navbar">
-            <a href="./index.html" class="logo"
-              >Web<span class="logo-primary">Studio</span></a
-            >
-            <ul class="nav__list">
-              <li class="nav__list-item">
-                <a class="nav__list-link" href="./index.html">Studio</a>
-              </li>
-              <li class="nav__list-item">
-                <a class="nav__list-link" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav__list-item">
-                <a class="nav__list-link" href="">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <address class="address">
-            <ul class="address__list">
-              <li class="address__list-item">
-                <a class="address__list-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="address__list-item">
-                <a class="address__list-link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
+      <div class="header-container container">
+        <nav class="navbar">
+          <a href="./index.html" class="logo"
+            >Web<span class="logo-primary">Studio</span></a
+          >
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="./index.html">Studio</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address">
+          <ul class="address__list">
+            <li class="address__list-item">
+              <a class="address__list-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address__list-item">
+              <a class="address__list-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
     </header>
     <main class="main">
@@ -92,10 +90,12 @@
                   class="portfolio__item-img"
                   width="360"
                 />
-                <h2 class="portfolio__item-title">
-                  Banking App Interface Concept
-                </h2>
-                <p class="portfolio__item-text">App</p>
+                <div class="portfolio__item-wrapper">
+                  <h2 class="portfolio__item-title">
+                    Banking App Interface Concept
+                  </h2>
+                  <p class="portfolio__item-text">App</p>
+                </div>
               </a>
             </li>
             <li class="portfolio__item">
@@ -106,8 +106,10 @@
                   class="portfolio__item-img"
                   width="360"
                 />
-                <h2 class="portfolio__item-title">Cashless Payment</h2>
-                <p class="portfolio__item-text">Marketing</p>
+                <div class="portfolio__item-wrapper">
+                  <h2 class="portfolio__item-title">Cashless Payment</h2>
+                  <p class="portfolio__item-text">Marketing</p>
+                </div>
               </a>
             </li>
             <li class="portfolio__item">
@@ -118,8 +120,10 @@
                   class="portfolio__item-img"
                   width="360"
                 />
-                <h2 class="portfolio__item-title">Meditation App</h2>
-                <p class="portfolio__item-text">App</p>
+                <div class="portfolio__item-wrapper">
+                  <h2 class="portfolio__item-title">Meditation App</h2>
+                  <p class="portfolio__item-text">App</p>
+                </div>
               </a>
             </li>
             <li class="portfolio__item">
@@ -130,8 +134,10 @@
                   class="portfolio__item-img"
                   width="360"
                 />
-                <h2 class="portfolio__item-title">Taxi Service</h2>
-                <p class="portfolio__item-text">Marketing</p>
+                <div class="portfolio__item-wrapper">
+                  <h2 class="portfolio__item-title">Taxi Service</h2>
+                  <p class="portfolio__item-text">Marketing</p>
+                </div>
               </a>
             </li>
             <li class="portfolio__item">
@@ -142,8 +148,10 @@
                   class="portfolio__item-img"
                   width="360"
                 />
-                <h2 class="portfolio__item-title">Screen Illustrations</h2>
-                <p class="portfolio__item-text">Design</p>
+                <div class="portfolio__item-wrapper">
+                  <h2 class="portfolio__item-title">Screen Illustrations</h2>
+                  <p class="portfolio__item-text">Design</p>
+                </div>
               </a>
             </li>
             <li class="portfolio__item">
@@ -154,8 +162,10 @@
                   class="portfolio__item-img"
                   width="360"
                 />
-                <h2 class="portfolio__item-title">Online Courses</h2>
-                <p class="portfolio__item-text">Marketing</p>
+                <div class="portfolio__item-wrapper">
+                  <h2 class="portfolio__item-title">Online Courses</h2>
+                  <p class="portfolio__item-text">Marketing</p>
+                </div>
               </a>
             </li>
             <li class="portfolio__item">
@@ -166,8 +176,12 @@
                   class="portfolio__item-img"
                   width="360"
                 />
-                <h2 class="portfolio__item-title">Instagram Stories Concept</h2>
-                <p class="portfolio__item-text">Design</p>
+                <div class="portfolio__item-wrapper">
+                  <h2 class="portfolio__item-title">
+                    Instagram Stories Concept
+                  </h2>
+                  <p class="portfolio__item-text">Design</p>
+                </div>
               </a>
             </li>
             <li class="portfolio__item">
@@ -178,8 +192,10 @@
                   class="portfolio__item-img"
                   width="360"
                 />
-                <h2 class="portfolio__item-title">Organic Food</h2>
-                <p class="portfolio__item-text">Web Site</p>
+                <div class="portfolio__item-wrapper">
+                  <h2 class="portfolio__item-title">Organic Food</h2>
+                  <p class="portfolio__item-text">Web Site</p>
+                </div>
               </a>
             </li>
             <li class="portfolio__item">
@@ -190,8 +206,10 @@
                   class="portfolio__item-img"
                   width="360"
                 />
-                <h2 class="portfolio__item-title">Fresh Coffee</h2>
-                <p class="portfolio__item-text">Web Site</p>
+                <div class="portfolio__item-wrapper">
+                  <h2 class="portfolio__item-title">Fresh Coffee</h2>
+                  <p class="portfolio__item-text">Web Site</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -200,7 +218,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="logo"
+        <a href="./index.html" class="logo logo-secondary"
           >Web<span class="logo-footer">Studio</span></a
         >
         <p class="footer-text">

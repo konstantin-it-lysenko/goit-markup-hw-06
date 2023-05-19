@@ -9,12 +9,22 @@ body {
   background-color: var(--background);
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 a {
   text-decoration: none;
 }
 
 ul {
   list-style: none;
+}
+
+img {
+  display: block;
 }
 
 .container {
@@ -58,11 +68,11 @@ ul {
   border-bottom: 1px solid var(--border);
 }
 
-.header__wrapper {
+.header-container {
+  padding: 24px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 0;
 }
 
 .navbar {
@@ -90,11 +100,8 @@ ul {
   gap: 40px;
 }
 
-/* .nav__list-item {
-  margin-right: 40px;
-} */
-
 .nav__list-link {
+  padding: 24px 0;
   font-weight: 500;
   color: var(--headingsColor);
 }
@@ -112,7 +119,6 @@ ul {
 
 .address__list {
   display: flex;
-  align-items: center;
   gap: 40px;
 }
 
@@ -142,8 +148,10 @@ ul {
 }
 
 .main-btn {
-  display: flex;
+  display: block;
   margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
   padding: 16px 32px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -165,8 +173,7 @@ ul {
 
 .advantages__items {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  gap: 24px;
 }
 
 .advantages__item {
@@ -228,8 +235,7 @@ ul {
 .team__item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: calc((100% - 3 * 24px) / 4);
   background: var(--background);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -242,6 +248,7 @@ ul {
 }
 
 .team__item-name {
+  margin-bottom: 8px;
   color: var(--headingsColor);
   font-weight: 500;
   font-size: 20px;
@@ -251,6 +258,11 @@ ul {
 .footer {
   padding: 100px 0;
   background-color: var(--footerBackground);
+}
+
+.logo-secondary {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-footer {
@@ -274,15 +286,14 @@ ul {
 }
 
 .portfolio__sort {
+  margin-bottom: 72px;
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 24px;
 }
 
 .portfolio__sort-btn {
   font-family: "Roboto", sans-serif;
-  margin-bottom: 72px;
   padding: 12px 24px;
   color: var(--portfolioBtnText);
   background: var(--portfolioButton);
@@ -299,6 +310,7 @@ ul {
 .portfolio__sort-btn:focus {
   color: var(--activeBtn);
   background-color: var(--activeBtnBackground);
+  border: 1px solid transparent;
 }
 
 .active {
@@ -313,17 +325,18 @@ ul {
 .portfolio__items {
   display: flex;
   flex-wrap: wrap;
-  flex: 0 0 26%;
   row-gap: 48px;
   column-gap: 24px;
 }
 
 .portfolio__item {
-  border: 1px solid var(--border);
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio__item-wrapper {
   padding: 32px 16px;
+  border: 1px solid var(--border);
+  border-top: none;
 }
 
 .portfolio__item-title {
