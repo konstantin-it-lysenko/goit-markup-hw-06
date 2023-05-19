@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -20,23 +27,31 @@
         <div class="header__wrapper">
           <nav class="navbar">
             <a href="./index.html" class="logo"
-              ><span class="logo-primary">Web</span>Studio</a
+              >Web<span class="logo-primary">Studio</span></a
             >
             <ul class="nav__list">
-              <li class="nav__list-item"><a href="#">Studio</a></li>
               <li class="nav__list-item">
-                <a href="./portfolio.html">Portfolio</a>
+                <a class="nav__list-link" href="./index.html">Studio</a>
               </li>
-              <li class="nav__list-item"><a href="#">Contacts</a></li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="">Contacts</a>
+              </li>
             </ul>
           </nav>
           <address class="address">
             <ul class="address__list">
               <li class="address__list-item">
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="address__list-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="address__list-item">
-                <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+                <a class="address__list-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
               </li>
             </ul>
           </address>
@@ -44,15 +59,13 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero">
-        <div class="container">
-          <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="main-btn" type="button">Order Service</button>
-        </div>
+      <section class="hero section">
+        <h1 class="main-title">Effective Solutions for Your Business</h1>
+        <button class="main-btn" type="button">Order Service</button>
       </section>
-      <section class="advantages">
+      <section class="advantages section">
         <div class="container">
-          <h2 hidden>advantages</h2>
+          <h2 class="advantages-title" hidden>advantages</h2>
           <ul class="advantages__items">
             <li class="advantages__item">
               <h3 class="advantages__item-title">Strategy</h3>
@@ -85,7 +98,7 @@
           </ul>
         </div>
       </section>
-      <section class="about">
+      <section class="about section">
         <div class="container">
           <h2 class="about-title">What are we doing</h2>
           <ul class="about__products">
@@ -116,7 +129,7 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="team section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team__items">
@@ -170,8 +183,8 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="logo-footer"
-          ><span class="logo-primary">Web</span>Studio</a
+        <a href="./index.html" class="logo"
+          >Web<span class="logo-footer">Studio</span></a
         >
         <p class="footer-text">
           Increase the flow of customers and sales for your business with

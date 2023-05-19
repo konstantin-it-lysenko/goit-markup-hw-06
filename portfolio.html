@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -20,23 +27,31 @@
         <div class="header__wrapper">
           <nav class="navbar">
             <a href="./index.html" class="logo"
-              ><span class="logo-primary">Web</span>Studio</a
+              >Web<span class="logo-primary">Studio</span></a
             >
             <ul class="nav__list">
-              <li class="nav__list-item"><a href="#">Studio</a></li>
               <li class="nav__list-item">
-                <a href="./portfolio.html">Portfolio</a>
+                <a class="nav__list-link" href="./index.html">Studio</a>
               </li>
-              <li class="nav__list-item"><a href="#">Contacts</a></li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="">Contacts</a>
+              </li>
             </ul>
           </nav>
           <address class="address">
             <ul class="address__list">
               <li class="address__list-item">
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="address__list-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="address__list-item">
-                <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+                <a class="address__list-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
               </li>
             </ul>
           </address>
@@ -44,14 +59,12 @@
       </div>
     </header>
     <main class="main">
-      <div class="container">
-        <section class="portfolio">
-          <h2 hidden>Portfolio</h2>
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="portfolio-title" hidden>Portfolio</h1>
           <ul class="portfolio__sort">
             <li class="portfolio__sort-item">
-              <button class="portfolio__sort-btn active" type="button">
-                All
-              </button>
+              <button class="portfolio__sort-btn" type="button">All</button>
             </li>
             <li>
               <button class="portfolio__sort-btn" type="button">
@@ -72,123 +85,123 @@
           </ul>
           <ul class="portfolio__items">
             <li class="portfolio__item">
-              <img
-                src="./images/portfolio-img1.jpg"
-                alt="project image1"
-                class="portfolio__item-img"
-                width="360"
-              />
-              <div class="portfolio__item-wrapper">
-                <h3 class="portfolio__item-title">
+              <a href="" class="portfolio__item-link">
+                <img
+                  src="./images/portfolio-img1.jpg"
+                  alt="project image1"
+                  class="portfolio__item-img"
+                  width="360"
+                />
+                <h2 class="portfolio__item-title">
                   Banking App Interface Concept
-                </h3>
+                </h2>
                 <p class="portfolio__item-text">App</p>
-              </div>
+              </a>
             </li>
             <li class="portfolio__item">
-              <img
-                src="./images/portfolio-img2.jpg"
-                alt="project image1"
-                class="portfolio__item-img"
-                width="360"
-              />
-              <div class="portfolio__item-wrapper">
-                <h3 class="portfolio__item-title">Cashless Payment</h3>
+              <a href="" class="portfolio__item-link">
+                <img
+                  src="./images/portfolio-img2.jpg"
+                  alt="project image1"
+                  class="portfolio__item-img"
+                  width="360"
+                />
+                <h2 class="portfolio__item-title">Cashless Payment</h2>
                 <p class="portfolio__item-text">Marketing</p>
-              </div>
+              </a>
             </li>
             <li class="portfolio__item">
-              <img
-                src="./images/portfolio-img3.jpg"
-                alt="project image1"
-                class="portfolio__item-img"
-                width="360"
-              />
-              <div class="portfolio__item-wrapper">
-                <h3 class="portfolio__item-title">Meditation App</h3>
+              <a href="" class="portfolio__item-link">
+                <img
+                  src="./images/portfolio-img3.jpg"
+                  alt="project image1"
+                  class="portfolio__item-img"
+                  width="360"
+                />
+                <h2 class="portfolio__item-title">Meditation App</h2>
                 <p class="portfolio__item-text">App</p>
-              </div>
+              </a>
             </li>
             <li class="portfolio__item">
-              <img
-                src="./images/portfolio-img4.jpg"
-                alt="project image1"
-                class="portfolio__item-img"
-                width="360"
-              />
-              <div class="portfolio__item-wrapper">
-                <h3 class="portfolio__item-title">Taxi Service</h3>
+              <a href="" class="portfolio__item-link">
+                <img
+                  src="./images/portfolio-img4.jpg"
+                  alt="project image1"
+                  class="portfolio__item-img"
+                  width="360"
+                />
+                <h2 class="portfolio__item-title">Taxi Service</h2>
                 <p class="portfolio__item-text">Marketing</p>
-              </div>
+              </a>
             </li>
             <li class="portfolio__item">
-              <img
-                src="./images/portfolio-img5.jpg"
-                alt="project image1"
-                class="portfolio__item-img"
-                width="360"
-              />
-              <div class="portfolio__item-wrapper">
-                <h3 class="portfolio__item-title">Screen Illustrations</h3>
+              <a href="" class="portfolio__item-link">
+                <img
+                  src="./images/portfolio-img5.jpg"
+                  alt="project image1"
+                  class="portfolio__item-img"
+                  width="360"
+                />
+                <h2 class="portfolio__item-title">Screen Illustrations</h2>
                 <p class="portfolio__item-text">Design</p>
-              </div>
+              </a>
             </li>
             <li class="portfolio__item">
-              <img
-                src="./images/portfolio-img6.jpg"
-                alt="project image1"
-                class="portfolio__item-img"
-                width="360"
-              />
-              <div class="portfolio__item-wrapper">
-                <h3 class="portfolio__item-title">Online Courses</h3>
+              <a href="" class="portfolio__item-link">
+                <img
+                  src="./images/portfolio-img6.jpg"
+                  alt="project image1"
+                  class="portfolio__item-img"
+                  width="360"
+                />
+                <h2 class="portfolio__item-title">Online Courses</h2>
                 <p class="portfolio__item-text">Marketing</p>
-              </div>
+              </a>
             </li>
             <li class="portfolio__item">
-              <img
-                src="./images/portfolio-img7.jpg"
-                alt="project image1"
-                class="portfolio__item-img"
-                width="360"
-              />
-              <div class="portfolio__item-wrapper">
-                <h3 class="portfolio__item-title">Instagram Stories Concept</h3>
+              <a href="" class="portfolio__item-link">
+                <img
+                  src="./images/portfolio-img7.jpg"
+                  alt="project image1"
+                  class="portfolio__item-img"
+                  width="360"
+                />
+                <h2 class="portfolio__item-title">Instagram Stories Concept</h2>
                 <p class="portfolio__item-text">Design</p>
-              </div>
+              </a>
             </li>
             <li class="portfolio__item">
-              <img
-                src="./images/portfolio-img8.jpg"
-                alt="project image1"
-                class="portfolio__item-img"
-                width="360"
-              />
-              <div class="portfolio__item-wrapper">
-                <h3 class="portfolio__item-title">Organic Food</h3>
+              <a href="" class="portfolio__item-link">
+                <img
+                  src="./images/portfolio-img8.jpg"
+                  alt="project image1"
+                  class="portfolio__item-img"
+                  width="360"
+                />
+                <h2 class="portfolio__item-title">Organic Food</h2>
                 <p class="portfolio__item-text">Web Site</p>
-              </div>
+              </a>
             </li>
             <li class="portfolio__item">
-              <img
-                src="./images/portfolio-img9.jpg"
-                alt="project image1"
-                class="portfolio__item-img"
-                width="360"
-              />
-              <div class="portfolio__item-wrapper">
-                <h3 class="portfolio__item-title">Fresh Coffee</h3>
+              <a href="" class="portfolio__item-link">
+                <img
+                  src="./images/portfolio-img9.jpg"
+                  alt="project image1"
+                  class="portfolio__item-img"
+                  width="360"
+                />
+                <h2 class="portfolio__item-title">Fresh Coffee</h2>
                 <p class="portfolio__item-text">Web Site</p>
-              </div>
+              </a>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="logo-footer"
-          ><span class="logo-primary">Web</span>Studio</a
+        <a href="./index.html" class="logo"
+          >Web<span class="logo-footer">Studio</span></a
         >
         <p class="footer-text">
           Increase the flow of customers and sales for your business with
