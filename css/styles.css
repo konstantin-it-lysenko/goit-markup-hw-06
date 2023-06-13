@@ -519,8 +519,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  transition: color, background-color, border-color,
-    box-shadow var(--transition);
+  transition: color var(--transition), background-color var(--transition),
+    border-color var(--transition), box-shadow var(--transition);
 }
 
 .portfolio__sort-btn:hover,
@@ -622,7 +622,7 @@ img {
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   z-index: 2;
-  transition: opacity, visibility var(--transition);
+  transition: opacity var(--transition), visibility var(--transition);
 }
 
 .backdrop.is-hidden .modal {
@@ -663,7 +663,7 @@ img {
   cursor: pointer;
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color, border var(--transition);
+  transition: background-color var(--transition), border var(--transition);
 }
 
 .modal-btn:hover,
