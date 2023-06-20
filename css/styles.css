@@ -740,6 +740,10 @@ textarea {
   margin-bottom: 8px;
 }
 
+.modal__form-textarea {
+  margin-bottom: 16px;
+}
+
 .modal__label {
   display: block;
   margin-bottom: 4px;
