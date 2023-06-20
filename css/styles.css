@@ -788,14 +788,14 @@ textarea {
 .modal__textarea {
   padding: 8px 16px;
   width: 100%;
-  min-height: 120px;
+  height: 120px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
   outline: transparent;
-  border: 1px solid rgba(46, 47, 66, 0.2);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   resize: none;
   transition: border-color var(--transition);
