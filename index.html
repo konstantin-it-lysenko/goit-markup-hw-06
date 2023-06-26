@@ -54,6 +54,75 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="burger__open-btn">
+          <span class="burger__line"></span>
+        </button>
+      </div>
+      <div class="burger__menu">
+        <button type="button" class="burger__close-btn">
+          <svg class="modal-cross" width="8" height="8">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <nav class="burger__navbar">
+          <ul class="burger__menu-list">
+            <li class="burger__menu-item">
+              <a class="burger__menu-link current-burger" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="burger__menu-item">
+              <a class="burger__menu-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="burger__menu-item">
+              <a class="burger__menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="burger__address">
+          <ul class="burger__address-list">
+            <li class="burger__address-item">
+              <a class="burger__address-phone" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="burger__address-item">
+              <a class="burger__address-email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="burger__social-list">
+          <li class="burger__social-item">
+            <a href="#" class="burger__social-link">
+              <svg class="burger__social-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger__social-item">
+            <a href="#" class="burger__social-link">
+              <svg class="burger__social-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger__social-item">
+            <a href="#" class="burger__social-link">
+              <svg class="burger__social-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger__social-item">
+            <a href="#" class="burger__social-link">
+              <svg class="burger__social-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main class="main">
@@ -126,6 +195,7 @@
           <ul class="about__products">
             <li class="about__product">
               <img
+                srcset="./images/about-1.jpg 1x, ./images/about-1-2x.jpg 2x"
                 src="./images/about-1.jpg"
                 alt="product-image-1"
                 class="about-img"
@@ -134,6 +204,7 @@
             </li>
             <li class="about__product">
               <img
+                srcset="./images/about-2.jpg 1x, ./images/about-2-2x.jpg 2x"
                 src="./images/about-2.jpg"
                 alt="product-image-2"
                 class="about-img"
@@ -142,6 +213,7 @@
             </li>
             <li class="about__product">
               <img
+                srcset="./images/about-3.jpg 1x, ./images/about-3-2x.jpg 2x"
                 src="./images/about-3.jpg"
                 alt="product-image-3"
                 class="about-img"
@@ -157,6 +229,7 @@
           <ul class="team__items">
             <li class="team__item">
               <img
+                srcset="./images/team-img1.jpg 1x, ./images/team-img1-2x.jpg 2x"
                 src="./images/team-img1.jpg"
                 alt="team member1"
                 width="264"
@@ -198,6 +271,7 @@
             </li>
             <li class="team__item">
               <img
+                srcset="./images/team-img2.jpg 1x, ./images/team-img2-2x.jpg 2x"
                 src="./images/team-img2.jpg"
                 alt="team member2"
                 width="264"
@@ -239,6 +313,7 @@
             </li>
             <li class="team__item">
               <img
+                srcset="./images/team-img3.jpg 1x, ./images/team-img3-2x.jpg 2x"
                 src="./images/team-img3.jpg"
                 alt="team member3"
                 width="264"
@@ -280,6 +355,7 @@
             </li>
             <li class="team__item">
               <img
+                srcset="./images/team-img4.jpg 1x, ./images/team-img4-2x.jpg 2x"
                 src="./images/team-img4.jpg"
                 alt="team member4"
                 width="264"
@@ -526,6 +602,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
