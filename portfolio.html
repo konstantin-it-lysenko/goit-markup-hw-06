@@ -30,12 +30,10 @@
           >
           <ul class="nav__list">
             <li class="nav__list-item">
-              <a class="nav__list-link" href="./index.html">Studio</a>
+              <a class="nav__list-link current" href="./index.html">Studio</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav__list-link current" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="nav__list-link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="nav__list-item">
               <a class="nav__list-link" href="">Contacts</a>
@@ -56,10 +54,79 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="burger__open-btn">
+          <span class="burger__line"></span>
+        </button>
+      </div>
+      <div class="burger__menu">
+        <button type="button" class="burger__close-btn">
+          <svg class="modal-cross" width="8" height="8">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <nav class="burger__navbar">
+          <ul class="burger__menu-list">
+            <li class="burger__menu-item">
+              <a class="burger__menu-link current-burger" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="burger__menu-item">
+              <a class="burger__menu-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="burger__menu-item">
+              <a class="burger__menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="burger__address">
+          <ul class="burger__address-list">
+            <li class="burger__address-item">
+              <a class="burger__address-phone" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="burger__address-item">
+              <a class="burger__address-email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="burger__social-list">
+          <li class="burger__social-item">
+            <a href="#" class="burger__social-link">
+              <svg class="burger__social-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger__social-item">
+            <a href="#" class="burger__social-link">
+              <svg class="burger__social-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger__social-item">
+            <a href="#" class="burger__social-link">
+              <svg class="burger__social-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger__social-item">
+            <a href="#" class="burger__social-link">
+              <svg class="burger__social-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main class="main">
-      <section class="portfolio section">
+      <section class="portfolio">
         <div class="container">
           <h1 class="portfolio-title" hidden>Portfolio</h1>
           <ul class="portfolio__sort">
@@ -347,5 +414,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
