@@ -1230,6 +1230,7 @@ textarea {
   background-color: rgba(46, 47, 66, 0.4);
   z-index: 2;
   transition: opacity var(--transition), visibility var(--transition);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden .modal {
@@ -1249,13 +1250,12 @@ textarea {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  min-height: 584px;
+  max-height: 584px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--transition);
-  overflow-y: scroll;
 }
 
 @media screen and (max-width: 428px) {
