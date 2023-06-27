@@ -991,7 +991,7 @@ textarea {
   padding: 8px 16px;
   width: 264px;
   height: 40px;
-  border: 1px solid #ffffff;
+  border: 1px solid rgb(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: transparent;
@@ -1011,6 +1011,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .footer__input {
     max-width: 264px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer__input {
+    border: 1px solid rgb(255, 255, 255);
   }
 }
 
