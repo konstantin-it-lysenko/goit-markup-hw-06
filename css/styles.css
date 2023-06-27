@@ -50,7 +50,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 766px;
+    max-width: 582px;
   }
 }
 
@@ -147,9 +147,19 @@ textarea {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+@media screen and (min-width: 768px) {
+  .header > .container {
+    max-width: 768px;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .header {
     padding: 24px 0;
+  }
+
+  .header > .container {
+    max-width: 1158px;
   }
 }
 
@@ -591,6 +601,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 1157.98px) {
+  .advantages > .container {
+    max-width: 736px;
+  }
+}
+
 .advantages__items {
   display: flex;
   flex-wrap: wrap;
@@ -864,9 +880,14 @@ textarea {
 
 .footer-container {
   display: flex;
-  justify-content: center;
   align-items: baseline;
   gap: 72px 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -886,6 +907,10 @@ textarea {
 }
 
 @media screen and (max-width: 767.98px) {
+  .footer-container {
+    justify-content: center;
+  }
+
   .footer__item:first-child {
     display: flex;
     align-items: center;
@@ -1019,12 +1044,6 @@ textarea {
 .footer__submit-btn:hover,
 .footer__submit-btn:focus {
   background: var(--activeBtnBackground);
-}
-
-.footer__submit-svg {
-  width: 24px;
-  height: 24px;
-  margin-left: 16px;
 }
 
 /** PAGE PORTFOLIO  */
